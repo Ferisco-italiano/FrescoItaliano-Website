@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bb-bg: #FFFFFF;
+    --bb-bg-alt: #FAF8F5;
+    --bb-sand: #F4F0EA;
+    --bb-border: #E3DDD3;
+    --bb-ink: #211D1A;
+    --bb-ink-soft: #514A44;
+    --bb-muted: #8C8378;
+    --bb-accent: #1C4E6B;
+    --bb-accent-light: #4A7C96;
+    --bb-accent-soft: #E7EEF1;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #211D1A;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    font-weight: 400;
+  }
+
+  /* h1, h2, h3, h4, h5, h6 {
+    font-family: 'Centaur', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    font-weight: 400;
+  } */
+}
+
+/* Bold, tight-set grotesque for headings — the "visual poetry" display look */
+.font-centaur {
+  font-family: 'Archivo Black', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+/* 
+.font-centaur {
+  font-family: 'Centaur', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+} */
+
+/* Clean modern sans for body copy — professional and energetic */
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Theme variables (single light theme) */
+.theme-light {
+  background-color: #FFFFFF;
+  color: #211D1A;
+}
+
+.theme-dark {
+  background-color: #FFFFFF;
+  color: #211D1A;
+}
+
+.gold-gradient-bg {
+  background: var(--bb-accent);
+}
+
+.gold-gradient-text {
+  color: var(--bb-accent);
+}
+
+.bluebottle-badge {
+  background-color: var(--bb-accent-soft);
+  color: var(--bb-accent);
+  border: 1px solid rgba(28, 78, 107, 0.25);
+}
+
+.gold-button {
+  background: var(--bb-accent);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.gold-button:hover {
+  background: #163e57;
+  transform: translateY(-1px);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: linear-gradient(135deg, #F5D77E 0%, #D4AF6A 50%, #9C7A3C 100%);
+  border-color: transparent;
+  color: #211D1A;
+  transform: translateY(-1px);
+}
+
+.btn-coffee-gold {
+  background: linear-gradient(135deg, #F5D77E 0%, #D4AF6A 50%, #9C7A3C 100%);
+  border-color: transparent;
+  color: #211D1A;
+  transform: translateY(-1px);
+}
+
+/* .btn-coffee-gold:hover {
+  background: linear-gradient(135deg, #F5D77E 0%, #D4AF6A 50%, #9C7A3C 100%);
+  border-color: transparent;
+  color: #211D1A;
+  transform: translateY(-1px);
+} */
+
+.bluebottle-button {
+  background-color: var(--bb-accent);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.bluebottle-button:hover {
+  background-color: #163e57;
+  transform: translateY(-1px);
+}
+
+.focal-blur-overlay {
+  backdrop-filter: blur(8px);
+}
+
+.motion-blur-effect {
+  filter: blur(4px);
+  transition: filter 0.8s ease-out;
+}
+
+.motion-blur-effect:hover {
+  filter: blur(0px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9BFAE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bb-accent);
+}

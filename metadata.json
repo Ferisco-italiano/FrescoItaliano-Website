@@ -1,0 +1,6 @@
+{
+  "name": "Fresco Italiano",
+  "description": "Luxury Italian Espresso Machinery & Specialty Coffee Amenity for B2B Property Managers and B2C Coffee Enthusiasts",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
