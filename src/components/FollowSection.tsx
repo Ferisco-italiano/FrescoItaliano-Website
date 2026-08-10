@@ -2,15 +2,12 @@ import React from 'react';
 import { Instagram, ChevronRight } from 'lucide-react';
 
 const GALLERY_IMAGES: string[] = [
-  'https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1606509036992-4399d5c5afe4?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1515697061774-2399f90c2b77?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1571040358759-a64f3e283c27?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1520714760316-984348992242?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1558210834-473f430c09ac?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1548971856-227577d13929?auto=format&fit=crop&w=500&q=80',
-  'https://images.unsplash.com/photo-1579265898841-79c7890d69cf?auto=format&fit=crop&w=500&q=80',
+  '../images/SocialMedia/InstagramImage1.png',
+  '../images/SocialMedia/InstagramImage2.png',
+  '../images/SocialMedia/InstagramImage3.png',
+  '../images/SocialMedia/InstagramImage4.png',
+  '../images/SocialMedia/InstagramImage5.png',
+  '../images/SocialMedia/InstagramImage6.png',
 ];
 
 const SEE_MORE_INDEX = 2;
