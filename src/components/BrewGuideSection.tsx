@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const SLIDE_IMAGES: string[] = [
-  '/images/GymBG.png',
-  '/images/OfficeBG.png',
-  '/images/ConstructionBG.png',
-  '/images/LobbyBG.png',
+  '/images/GymBG.webp',
+  '/images/OfficeBG.webp',
+  '/images/ConstructionBG.webp',
+  '/images/LobbyBG.webp',
 ];
 
 export const BrewGuideSection: React.FC = () => {
@@ -19,7 +19,7 @@ export const BrewGuideSection: React.FC = () => {
 
   return (
     <section className="w-full bg-gradient-to-r from-transparent to-[#d4cbb8] py-12 sm:py-20 px-4 sm:px-8">
-    <div className="relative w-full max-w-7xl mx-auto min-h-[680px] sm:min-h-[780px] rounded-[2rem] border border-[#E3DDD3] shadow-sm bg-[#0A0806] text-[#EDE6D6] overflow-hidden">
+    <div className="relative w-full max-w-7xl mx-auto min-h-[42.5rem] sm:min-h-[48.75rem] rounded-[2rem] border border-[#E3DDD3] shadow-sm bg-[#0A0806] text-[#EDE6D6] overflow-hidden">
       {/* Cross-fading background photos */}
       <div className="absolute inset-0">
         {SLIDE_IMAGES.map((src, i) => (
@@ -28,7 +28,11 @@ export const BrewGuideSection: React.FC = () => {
             className="absolute inset-0 transition-opacity duration-[1500ms] ease-in-out"
             style={{ opacity: i === index ? 1 : 0 }}
           >
-            <img src={src} alt="" className="w-full h-full object-cover" style={{ objectPosition: '50% 55%' }} />
+            <img
+              src={src}
+              alt=""
+              className="w-full h-full object-cover object-[78%_55%] sm:object-[68%_55%] lg:object-[50%_55%]"
+            />
           </div>
         ))}
       </div>
@@ -49,18 +53,18 @@ export const BrewGuideSection: React.FC = () => {
       />
 
       {/* Static content, left-aligned and vertically centered */}
-      <div className="relative z-10 w-full h-full min-h-[680px] sm:min-h-[780px] flex items-center px-6 sm:px-12 py-16">
+      <div className="relative z-10 w-full h-full min-h-[42.5rem] sm:min-h-[48.75rem] flex items-center px-6 sm:px-12 py-16">
         <div className="max-w-md">
           <h1 className="font-centaur leading-[0.98] font-normal m-0">
             <span
               className="block text-[#F7F3EA]"
-              style={{ fontSize: 'clamp(36px, 4.8vw, 56px)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
+              style={{ fontSize: 'clamp(2.25rem, 4.8vw, 3.5rem)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
             >
               Elevate Your
             </span>
             <span
               className="block text-[#D4B873]"
-              style={{ fontSize: 'clamp(36px, 4.8vw, 56px)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
+              style={{ fontSize: 'clamp(2.25rem, 4.8vw, 3.5rem)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
             >
               Location.
             </span>

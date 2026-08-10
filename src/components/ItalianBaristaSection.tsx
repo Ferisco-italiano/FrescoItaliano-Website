@@ -17,11 +17,11 @@ const ItalyIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 export const ItalianBaristaSection: React.FC<ItalianBaristaSectionProps> = ({ onOpenEligibility }) => {
   return (
-    <section id="italian-barista" className="relative py-36 sm:py-48 min-h-[640px] flex items-center bg-black text-white overflow-hidden">
+    <section id="italian-barista" className="relative py-36 sm:py-48 min-h-[40rem] flex items-center bg-black text-white overflow-hidden">
       {/* Full-bleed background photo */}
       <div className="absolute inset-0">
         <img
-          src="/images/CoffeeEvolutionBG.png"
+          src="/images/CoffeeEvolutionBG.webp"
           alt="Barista pouring milk into a Bianchi espresso cup beside a modern Bianchi coffee machine"
           className="w-full h-full object-cover"
         />

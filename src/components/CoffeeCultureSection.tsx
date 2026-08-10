@@ -36,8 +36,10 @@ export const CoffeeCultureSection: React.FC<CoffeeCultureSectionProps> = ({ onOp
   return (
     <section id="coffee-culture" className="relative py-24 sm:py-32 bg-white text-[#211D1A] border-t border-[#E3DDD3]">
 
-      {/* Interactive Menu Showcase Section */}
-      <div id="beverage-menu" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Interactive Menu Showcase Section — wider cap than the site's usual max-w-7xl so this
+          carousel keeps claiming more horizontal space as the viewport grows past 1440px,
+          instead of staying boxed in while whitespace opens up on the sides. */}
+      <div id="beverage-menu" className="max-w-7xl 2xl:max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Simple left-aligned heading, matching reference style */}
         <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
@@ -62,7 +64,7 @@ export const CoffeeCultureSection: React.FC<CoffeeCultureSectionProps> = ({ onOp
                 className={`px-4 py-2 rounded-sm text-xs font-sans-clean transition-all cursor-pointer ${
                   filterCategory === item.key
                     ? 'bg-[#3B2417] text-white font-semibold'
-                    : 'bg-[#F4F0EA] text-[#514A44] hover:text-[#1C4E6B] border border-[#E3DDD3]'
+                    : 'bg-[#F4F0EA] text-[#514A44] hover:text-[#211D1A] border border-[#E3DDD3]'
                 }`}
               >
                 {item.label}
@@ -81,7 +83,7 @@ export const CoffeeCultureSection: React.FC<CoffeeCultureSectionProps> = ({ onOp
               <div
                 key={drink.id}
                 onClick={() => setActiveDrink(drink)}
-                className="relative h-[440px] w-[300px] sm:w-[340px] flex-shrink-0 overflow-hidden group cursor-pointer"
+                className="relative h-[27.5rem] w-[18.75rem] sm:w-[21.25rem] flex-shrink-0 overflow-hidden group cursor-pointer"
               >
                 <img
                   src={drink.image}
@@ -100,10 +102,10 @@ export const CoffeeCultureSection: React.FC<CoffeeCultureSectionProps> = ({ onOp
                 {/* Bottom overlay: name + See Now link */}
                 <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between">
                   <div>
-                    <span className="text-[10px] font-sans-clean text-white/70 uppercase tracking-wide block">
+                    <span className="text-[0.625rem] font-sans-clean text-white/70 uppercase tracking-wide block">
                       {drink.italianName}
                     </span>
-                    <h4 className="font-centaur text-[40px] font-medium text-white">{drink.name}</h4>
+                    <h4 className="font-centaur text-[2.5rem] font-medium text-white">{drink.name}</h4>
                   </div>
                   {/* <span className="text-xs font-sans-clean text-white font-semibold flex items-center gap-1 whitespace-nowrap group-hover:gap-2 transition-all">
                     See Now <ChevronRight className="w-3.5 h-3.5" />

@@ -79,7 +79,7 @@ export const CategoryCardSection: React.FC = () => {
     <section className="py-16 sm:py-20 bg-white border-t border-[#E3DDD3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-left space-y-2">
-          <span className="text-xs font-sans-clean uppercase tracking-[0.25em] text-[#1C4E6B]">
+          <span className="text-xs font-sans-clean uppercase tracking-[0.25em] text-[#211D1A]">
             The Fresco System
           </span>
           <h2 className="font-centaur text-2xl sm:text-3xl font-medium text-[#211D1A]">
@@ -92,9 +92,9 @@ export const CategoryCardSection: React.FC = () => {
             <button
               key={card.id}
               onClick={() => scrollToSection(card.target)}
-              className="group flex-shrink-0 w-[210px] sm:w-[230px] text-left snap-start cursor-pointer"
+              className="group flex-shrink-0 w-[13.125rem] sm:w-[14.375rem] text-left snap-start cursor-pointer"
             >
-              <div className="w-full h-[210px] sm:h-[230px] rounded-xl overflow-hidden border border-[#E3DDD3] bg-[#FAF8F5]">
+              <div className="w-full h-[13.125rem] sm:h-[14.375rem] rounded-xl overflow-hidden border border-[#E3DDD3] bg-[#FAF8F5]">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -105,7 +105,7 @@ export const CategoryCardSection: React.FC = () => {
                 <span className="text-[10px] font-sans-clean uppercase tracking-wide text-[#8C8378]">
                   {card.eyebrow}
                 </span>
-                <h3 className="font-sans-clean text-sm font-semibold text-[#211D1A] leading-snug group-hover:text-[#1C4E6B] transition-colors">
+                <h3 className="font-sans-clean text-sm font-semibold text-[#211D1A] leading-snug group-hover:text-[#211D1A] transition-colors">
                   {card.title}
                 </h3>
               </div>

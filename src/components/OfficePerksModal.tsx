@@ -31,7 +31,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#1C4E6B] border border-[#E3DDD3] transition-colors focus:outline-none"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none"
         >
           <X className="w-5 h-5" />
         </button>
@@ -40,7 +40,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
           <div className="space-y-8">
             {/* Header Banner */}
             <div className="space-y-3 border-b border-[#E3DDD3] pb-6 pr-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#1C4E6B]/40 text-[#1C4E6B] text-[11px] font-mono uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#211D1A]/40 text-[#211D1A] text-[11px] font-mono uppercase tracking-widest">
                 <Gift className="w-3.5 h-3.5" /> Corporate Perks Program
               </div>
               <h2 className="font-centaur text-3xl sm:text-4xl font-bold text-[#211D1A]">
@@ -54,7 +54,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
             {/* 3 Corporate Benefit Cards */}
             <div className="grid sm:grid-cols-3 gap-4 font-sans-clean text-xs">
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <div className="flex items-center gap-1.5 text-[#1C4E6B] font-bold">
+                <div className="flex items-center gap-1.5 text-[#211D1A] font-bold">
                   <Coffee className="w-4 h-4" /> 15-Second Espresso Shots
                 </div>
                 <p className="text-[#8C8378] text-[11px]">
@@ -63,7 +63,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
               </div>
 
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <div className="flex items-center gap-1.5 text-[#1C4E6B] font-bold">
+                <div className="flex items-center gap-1.5 text-[#211D1A] font-bold">
                   <Award className="w-4 h-4" /> SCA 80+ Java Blend
                 </div>
                 <p className="text-[#8C8378] text-[11px]">
@@ -72,7 +72,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
               </div>
 
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <div className="flex items-center gap-1.5 text-[#1C4E6B] font-bold">
+                <div className="flex items-center gap-1.5 text-[#211D1A] font-bold">
                   <Users className="w-4 h-4" /> Boost Team Morale
                 </div>
                 <p className="text-[#8C8378] text-[11px]">
@@ -96,7 +96,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
                     placeholder="e.g. Sarah Jenkins"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
 
@@ -108,7 +108,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
                     placeholder="sarah@techcompany.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
               </div>
@@ -122,7 +122,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
                     placeholder="e.g. Acme Innovations Inc."
                     value={formData.companyName}
                     onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
 
@@ -131,7 +131,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
                   <select
                     value={formData.employeeCount}
                     onChange={(e) => setFormData({ ...formData, employeeCount: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   >
                     <option value="10-25 employees">10 - 25 employees</option>
                     <option value="25-100 employees">25 - 100 employees</option>
@@ -147,7 +147,7 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
                   rows={2}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl p-3 text-[#211D1A] focus:outline-none"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl p-3 text-[#211D1A] focus:outline-none"
                 />
               </div>
 
@@ -167,14 +167,14 @@ export const OfficePerksModal: React.FC<OfficePerksModalProps> = ({ isOpen, onCl
             </div>
 
             <div className="space-y-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#1C4E6B]">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#211D1A]">
                 Corporate Perk Request Confirmation
               </span>
               <h3 className="font-centaur text-3xl font-bold text-[#211D1A]">
                 Thank You, {formData.name.split(' ')[0]}!
               </h3>
               <p className="font-sans-clean text-xs text-[#514A44] max-w-md mx-auto">
-                We have received your office perk request for <strong className="text-[#1C4E6B]">{formData.companyName}</strong>. Our corporate account team will reach out to <span className="underline">{formData.email}</span> with a custom coffee breakroom proposal.
+                We have received your office perk request for <strong className="text-[#211D1A]">{formData.companyName}</strong>. Our corporate account team will reach out to <span className="underline">{formData.email}</span> with a custom coffee breakroom proposal.
               </p>
             </div>
 

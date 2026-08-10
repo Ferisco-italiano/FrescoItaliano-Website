@@ -33,7 +33,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 86.5,
     intensity: 9,
     notes: ['Dark Chocolate', 'Toasted Almond', 'Golden Caramel'],
-    image: '/images/Coffee/Short Espresso.png'
+    image: '/images/Coffee/Short Espresso.webp'
   },
   {
     id: 'long-espresso',
@@ -46,7 +46,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.5,
     intensity: 7,
     notes: ['Brown Sugar', 'Toasted Grain', 'Soft Citrus'],
-    image: '/images/Coffee/Long Espresso.png'
+    image: '/images/Coffee/Long Espresso.webp'
   },
   {
     id: 'macchiato',
@@ -59,7 +59,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 86.0,
     intensity: 8,
     notes: ['Cocoa Nibs', 'Warm Milk', 'Roasted Hazelnut'],
-    image: '/images/Coffee/Macchiato.png'
+    image: '/images/Coffee/Macchiato.webp'
   },
   {
     id: 'americano',
@@ -72,7 +72,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.0,
     intensity: 6,
     notes: ['Dark Cocoa', 'Toasted Bread', 'Golden Crema'],
-    image: '/images/Coffee/Americano.png'
+    image: '/images/Coffee/Americano.webp'
   },
   {
     id: 'cappuccino',
@@ -85,7 +85,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.5,
     intensity: 7,
     notes: ['Vanilla Bean', 'Creamy Milk', 'Toasted Hazelnut'],
-    image: '/images/Coffee/Cappuccino.png'
+    image: '/images/Coffee/Cappuccino.webp'
   },
   {
     id: 'mocha',
@@ -98,7 +98,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.0,
     intensity: 7,
     notes: ['Rich Cocoa', 'Steamed Milk', 'Golden Caramel'],
-    image: '/images/Coffee/Mocha.png'
+    image: '/images/Coffee/Mocha.webp'
   },
   {
     id: 'mochaccino',
@@ -111,7 +111,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 84.5,
     intensity: 6,
     notes: ['Dense Chocolate', 'Whipped Milk', 'Sweet Cream'],
-    image: '/images/Coffee/Mochaccino.png'
+    image: '/images/Coffee/Mochaccino.webp'
   },
   {
     id: 'cafe-latte',
@@ -124,7 +124,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.0,
     intensity: 6,
     notes: ['Toffee', 'Warm Spice', 'Steamed Milk'],
-    image: '/images/Coffee/CafeLate.png'
+    image: '/images/Coffee/CafeLate.webp'
   },
   {
     id: 'hot-chocolate',
@@ -137,7 +137,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 3,
     notes: ['Velvet Cocoa', 'Steamed Milk', 'Warm Sweetness'],
-    image: '/images/Coffee/Hot Chocolate.png'
+    image: '/images/Coffee/Hot Chocolate.webp'
   },
   {
     id: 'french-vanilla',
@@ -150,7 +150,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 82.0,
     intensity: 4,
     notes: ['Vanilla Bean', 'Warm Cream', 'Soft Sweetness'],
-    image: '/images/Coffee/French Vanilla.png'
+    image: '/images/Coffee/French Vanilla.webp'
   },
   {
     id: 'earl-grey-tea',
@@ -163,7 +163,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 4,
     notes: ['Bergamot', 'Black Tea', 'Citrus Zest'],
-    image: '/images/Coffee/Earl Grey Tea.png'
+    image: '/images/Coffee/Earl Grey Tea.webp'
   },
   {
     id: 'english-breakfast-tea',
@@ -176,7 +176,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 5,
     notes: ['Malty Black Tea', 'Toasted Grain', 'Robust Body'],
-    image: '/images/Coffee/EnglishBreakfatTea.png'
+    image: '/images/Coffee/EnglishBreakfatTea.webp'
   },
   {
     id: 'green-tea',
@@ -189,7 +189,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 2,
     notes: ['Grassy Notes', 'Light Sweetness', 'Clean Finish'],
-    image: '/images/Coffee/Green Tea.png'
+    image: '/images/Coffee/Green Tea.webp'
   },
   {
     id: 'peppermint-tea',
@@ -202,7 +202,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 1,
     notes: ['Crisp Mint', 'Cooling Finish', 'Naturally Caffeine-Free'],
-    image: '/images/Coffee/PepperminTea.png'
+    image: '/images/Coffee/PepperminTea.webp'
   },
   {
     id: 'chai-tea-latte',
@@ -215,7 +215,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 0,
     intensity: 4,
     notes: ['Cinnamon', 'Cardamom', 'Steamed Milk'],
-    image: '/images/Coffee/ChaiTeaLatte.png'
+    image: '/images/Coffee/ChaiTeaLatte.webp'
   },
   {
     id: 'protein-coffee',
@@ -228,7 +228,7 @@ export const SIGNATURE_DRINKS: CoffeeDrink[] = [
     scaScore: 85.0,
     intensity: 7,
     notes: ['Roasted Espresso', 'Creamy Protein', 'Subtle Sweetness'],
-    image: '/images/Coffee/ProteinCoffee.png'
+    image: '/images/Coffee/ProteinCoffee.webp'
   }
 ];
 

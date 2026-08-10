@@ -2,12 +2,15 @@ import React from 'react';
 import { Instagram, ChevronRight } from 'lucide-react';
 
 const GALLERY_IMAGES: string[] = [
-  '../images/SocialMedia/InstagramImage1.png',
-  '../images/SocialMedia/InstagramImage2.png',
-  '../images/SocialMedia/InstagramImage3.png',
-  '../images/SocialMedia/InstagramImage4.png',
-  '../images/SocialMedia/InstagramImage5.png',
-  '../images/SocialMedia/InstagramImage6.png',
+  '/images/SocialMedia/InstagramImage1.webp',
+  '/images/SocialMedia/InstagramImage2.webp',
+  '/images/SocialMedia/InstagramImage3.webp',
+  '/images/SocialMedia/InstagramImage4.webp',
+  '/images/SocialMedia/InstagramImage5.webp',
+  '/images/SocialMedia/InstagramImage6.webp',
+  '/images/SocialMedia/InstagramImage7.webp',
+  '/images/SocialMedia/InstagramImage8.webp',
+  '/images/SocialMedia/InstagramImage9.webp',
 ];
 
 const SEE_MORE_INDEX = 2;
@@ -17,7 +20,7 @@ export const FollowSection: React.FC = () => {
     <section className="py-20 sm:py-24 bg-[#dbc1ac] border-t border-[#E3DDD3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2">
-          <span className="inline-flex items-center gap-2 text-xs font-sans-clean uppercase tracking-[0.25em] text-[#1C4E6B]">
+          <span className="inline-flex items-center gap-2 text-xs font-sans-clean uppercase tracking-[0.25em] text-[#211D1A]">
             <Instagram className="w-3.5 h-3.5" />
             Follow Us @FrescoItaliano
           </span>

@@ -41,7 +41,7 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
           {/* Left: Interactive Controls */}
           <div className="lg:col-span-6 space-y-6">
             <div className="border-b border-[#E3DDD3] pb-4">
-              <div className="flex items-center gap-2 text-[#1C4E6B] text-xs font-sans-clean uppercase tracking-wide">
+              <div className="flex items-center gap-2 text-[#211D1A] text-xs font-sans-clean uppercase tracking-wide">
                 <Calculator className="w-4 h-4" /> Property Manager Amenity Estimator
               </div>
               <h3 className="font-centaur text-3xl font-medium text-[#211D1A] mt-1">
@@ -60,8 +60,8 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
                   onClick={() => setBuildingType('commercial')}
                   className={`py-2.5 px-3 rounded-xl text-xs font-sans-clean transition-all cursor-pointer border ${
                     buildingType === 'commercial'
-                      ? 'bg-[#1C4E6B] text-white font-semibold border-[#1C4E6B]'
-                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#1C4E6B]'
+                      ? 'bg-[#211D1A] text-white font-semibold border-[#211D1A]'
+                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#211D1A]'
                   }`}
                 >
                   Commercial Office
@@ -71,8 +71,8 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
                   onClick={() => setBuildingType('residential')}
                   className={`py-2.5 px-3 rounded-xl text-xs font-sans-clean transition-all cursor-pointer border ${
                     buildingType === 'residential'
-                      ? 'bg-[#1C4E6B] text-white font-semibold border-[#1C4E6B]'
-                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#1C4E6B]'
+                      ? 'bg-[#211D1A] text-white font-semibold border-[#211D1A]'
+                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#211D1A]'
                   }`}
                 >
                   Luxury Residential
@@ -82,8 +82,8 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
                   onClick={() => setBuildingType('public')}
                   className={`py-2.5 px-3 rounded-xl text-xs font-sans-clean transition-all cursor-pointer border ${
                     buildingType === 'public'
-                      ? 'bg-[#1C4E6B] text-white font-semibold border-[#1C4E6B]'
-                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#1C4E6B]'
+                      ? 'bg-[#211D1A] text-white font-semibold border-[#211D1A]'
+                      : 'bg-[#FAF8F5] text-[#514A44] border-[#E3DDD3] hover:border-[#211D1A]'
                   }`}
                 >
                   Public &amp; Retail
@@ -97,7 +97,7 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
                 <label className="text-[#514A44] uppercase tracking-wide">
                   2. Daily Foot Traffic / Occupants:
                 </label>
-                <span className="text-[#1C4E6B] font-sans-clean font-semibold text-sm">
+                <span className="text-[#211D1A] font-sans-clean font-semibold text-sm">
                   {footTraffic} people/day
                 </span>
               </div>
@@ -108,7 +108,7 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
                 step="25"
                 value={footTraffic}
                 onChange={(e) => setFootTraffic(Number(e.target.value))}
-                className="w-full h-2 bg-[#E3DDD3] rounded-lg appearance-none cursor-pointer accent-[#1C4E6B]"
+                className="w-full h-2 bg-[#E3DDD3] rounded-lg appearance-none cursor-pointer accent-[#211D1A]"
               />
               <div className="flex justify-between text-[10px] font-sans-clean text-[#8C8378]">
                 <span>50 occupants</span>
@@ -137,10 +137,10 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
           {/* Right: Calculated Value Output Display */}
           <div className="lg:col-span-6 bg-[#FAF8F5] border border-[#E3DDD3] rounded-2xl p-6 sm:p-8 space-y-6">
             <div className="flex items-center justify-between pb-4 border-b border-[#E3DDD3]">
-              <span className="text-xs font-sans-clean uppercase tracking-wide text-[#1C4E6B]">
+              <span className="text-xs font-sans-clean uppercase tracking-wide text-[#211D1A]">
                 Estimated Location Impact
               </span>
-              <span className="px-2.5 py-1 rounded bg-[#1C4E6B] text-[10px] font-sans-clean font-semibold text-white">
+              <span className="px-2.5 py-1 rounded bg-[#211D1A] text-[10px] font-sans-clean font-semibold text-white">
                 B2B Revenue Share
               </span>
             </div>
@@ -155,14 +155,14 @@ export const SpaceElevationSection: React.FC<SpaceElevationSectionProps> = ({ on
 
               <div className="bg-white p-4 rounded-xl border border-[#E3DDD3]">
                 <p className="text-[10px] font-sans-clean text-[#8C8378] uppercase">Perceived Amenity Value</p>
-                <p className="font-centaur text-3xl font-medium text-[#1C4E6B] mt-1">
+                <p className="font-centaur text-3xl font-medium text-[#211D1A] mt-1">
                   ${(annualAmenityValue / 1000).toFixed(1)}k <span className="text-sm font-sans-clean text-[#8C8378]">/yr</span>
                 </p>
               </div>
             </div>
 
-            <div className="bg-white p-5 rounded-xl border border-[#1C4E6B]/30 text-left space-y-2">
-              <p className="text-xs font-sans-clean text-[#1C4E6B] uppercase tracking-wide font-semibold">
+            <div className="bg-white p-5 rounded-xl border border-[#211D1A]/30 text-left space-y-2">
+              <p className="text-xs font-sans-clean text-[#211D1A] uppercase tracking-wide font-semibold">
                 Estimated Annual Location Passive Share:
               </p>
               <div className="flex items-baseline gap-2">

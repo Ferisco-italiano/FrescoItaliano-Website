@@ -19,7 +19,7 @@ const KIT_ITEMS: KitItem[] = [
     title: 'Bianchi Espresso Engine',
     description: '15-bar constant pressure extraction, built and certified in Milan, Italy.',
     tag: 'Core Machine',
-    image: '/images/machine1.png',
+    image: '/images/machine1.webp',
   },
   {
     id: 'console',
@@ -28,7 +28,7 @@ const KIT_ITEMS: KitItem[] = [
     title: 'HD Touch Console',
     description: 'Zero-contact ordering with custom brew strength and mug size selection.',
     tag: 'Interface',
-    image: '/images/machine2.png',
+    image: '/images/machine2.webp',
   },
   {
     id: 'grinder-tower',
@@ -37,7 +37,7 @@ const KIT_ITEMS: KitItem[] = [
     title: 'Ceramic Grinding Tower',
     description: 'On-demand titanium ceramic burrs grind each cup fresh in under 3 seconds.',
     tag: 'Freshness System',
-    image: '/images/machine3.png',
+    image: '/images/machine3.webp',
   },
 ];
 

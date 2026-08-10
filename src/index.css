@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
 @layer base {
+  /* Above the 1440px design baseline, scale the root font-size proportionally with
+     viewport width so type, spacing, and rem-based sizing all grow together instead
+     of staying pinned while extra whitespace opens up on the sides. 1440px = 16px
+     (100%, matches every rem-based size already in the design). Capped at 28px
+     (175%, reached at 2520px+) so ultra-wide/4K screens don't get cartoonishly large
+     text — viewing distance on those displays doesn't scale 1:1 with pixel width. */
+  html {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1440px) {
+    html {
+      font-size: clamp(16px, 1.1111vw, 28px);
+    }
+  }
+
   :root {
     --bb-bg: #FFFFFF;
     --bb-bg-alt: #FAF8F5;
@@ -9,7 +25,7 @@
     --bb-ink: #211D1A;
     --bb-ink-soft: #514A44;
     --bb-muted: #8C8378;
-    --bb-accent: #1C4E6B;
+    --bb-accent: #211D1A;
     --bb-accent-light: #4A7C96;
     --bb-accent-soft: #E7EEF1;
   }
@@ -88,7 +104,7 @@
 }
 
 .gold-button:hover {
-  background: #163e57;
+  background: #211D1A;
   transform: translateY(-1px);
 }
 
@@ -129,7 +145,7 @@
 }
 
 .bluebottle-button:hover {
-  background-color: #163e57;
+  background-color: #211D1A;
   transform: translateY(-1px);
 }
 

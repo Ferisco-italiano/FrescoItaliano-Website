@@ -16,7 +16,7 @@ const SLIDES: Slide[] = [
     eyebrow: 'Zero Capital Cost Placement',
     title: 'Espresso When You Need It, Where You Need It.',
     cta: 'Check Location Eligibility',
-    image: '/images/CoffeeHeroImage.png',
+    image: '/images/CoffeeHeroImage.webp',
     focus: 'object-center',
   },
   {
@@ -24,7 +24,7 @@ const SLIDES: Slide[] = [
     eyebrow: 'Bianchi ISO-Spec Machinery',
     title: 'Your Personal Italian Barista, Installed Free.',
     cta: 'Explore The Machine',
-    image: '/images/CoffeeVendingMachinHero.png',
+    image: '/images/CoffeeVendingMachinHero.webp',
     focus: 'object-center',
   },
   {
@@ -32,7 +32,7 @@ const SLIDES: Slide[] = [
     eyebrow: 'Java Blend SCA 80+ Beans',
     title: 'Specialty Coffee, Freshly Roasted In Nova Scotia.',
     cta: 'Explore The Beverage Menu',
-    image: '/images/CoffeeVendingMachinHero2.png',
+    image: '/images/CoffeeVendingMachinHero2.webp',
     focus: 'object-center',
   },
 ];
@@ -54,13 +54,13 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ onOpenEligibility })
   const goTo = (i: number) => setIndex((i + SLIDES.length) % SLIDES.length);
 
   return (
-    <section id="hero" className="relative w-full h-[70vh] min-h-[480px] sm:h-[85vh] sm:min-h-[620px] overflow-hidden bg-[#1A1512]">
+    <section id="hero" className="relative w-full h-[70vh] min-h-[30rem] sm:h-[85vh] sm:min-h-[38.75rem] overflow-hidden bg-[#1A1512]">
       {/* Logo + Check Eligibility, overlaid on the hero in place of a navbar */}
       <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-6 sm:px-10 py-5 sm:py-6">
         <img src="/images/logo.svg" alt="Fresco Italiano" className="h-15 w-auto sm:h-15" />
         <button
           onClick={onOpenEligibility}
-          className="btn-outline-gold px-5 py-2.5 sm:px-6 sm:py-3 rounded-sm text-[11px] sm:text-xs font-sans-clean uppercase tracking-[0.15em] font-semibold cursor-pointer"
+          className="btn-outline-gold px-5 py-2.5 sm:px-6 sm:py-3 rounded-sm text-[0.6875rem] sm:text-xs font-sans-clean uppercase tracking-[0.15em] font-semibold cursor-pointer"
         >
           Check Eligibility
         </button>
@@ -83,7 +83,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ onOpenEligibility })
           <div className="absolute inset-0 flex items-end sm:items-center">
             <div className="max-w-7xl mx-auto px-6 sm:px-10 pb-14 sm:pb-0 w-full">
               <div className="max-w-xl text-left space-y-4">
-                <span className="inline-block text-[11px] font-sans-clean uppercase tracking-[0.25em] text-[#D4AF6A]">
+                <span className="inline-block text-[0.6875rem] font-sans-clean uppercase tracking-[0.25em] text-[#D4AF6A]">
                   {slide.eyebrow}
                 </span>
                 <h1 className="font-centaur text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-white tracking-tight">
@@ -101,18 +101,18 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ onOpenEligibility })
         </div>
       ))}
 
-      {/* Arrows */}
+      {/* Arrows — desktop only; mobile/tablet use the dots below to navigate */}
       <button
         onClick={() => goTo(index - 1)}
         aria-label="Previous slide"
-        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center text-white transition-colors cursor-pointer"
+        className="hidden lg:flex absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-sm items-center justify-center text-white transition-colors cursor-pointer"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
         onClick={() => goTo(index + 1)}
         aria-label="Next slide"
-        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center text-white transition-colors cursor-pointer"
+        className="hidden lg:flex absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-sm items-center justify-center text-white transition-colors cursor-pointer"
       >
         <ChevronRight className="w-5 h-5" />
       </button>

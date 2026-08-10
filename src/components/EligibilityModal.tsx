@@ -44,7 +44,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#1C4E6B] border border-[#E3DDD3] transition-colors focus:outline-none"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none"
           aria-label="Close Modal"
         >
           <X className="w-5 h-5" />
@@ -54,7 +54,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
           <div className="space-y-6">
             {/* Modal Header */}
             <div className="space-y-2 border-b border-[#E3DDD3] pb-4 pr-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#1C4E6B]/40 text-[#1C4E6B] text-[11px] font-mono uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#211D1A]/40 text-[#211D1A] text-[11px] font-mono uppercase tracking-widest">
                 <Sparkles className="w-3.5 h-3.5" /> Placement Qualification
               </div>
               <h3 className="font-centaur text-3xl font-bold text-[#211D1A]">
@@ -72,7 +72,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="text-[#514A44] font-medium flex items-center gap-1.5">
-                    <User className="w-3.5 h-3.5 text-[#1C4E6B]" /> Full Name *
+                    <User className="w-3.5 h-3.5 text-[#211D1A]" /> Full Name *
                   </label>
                   <input
                     type="text"
@@ -80,13 +80,13 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                     placeholder="e.g. Marcus Vance"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
                   />
                 </div>
 
                 <div className="space-y-1">
                   <label className="text-[#514A44] font-medium flex items-center gap-1.5">
-                    <Mail className="w-3.5 h-3.5 text-[#1C4E6B]" /> Work Email *
+                    <Mail className="w-3.5 h-3.5 text-[#211D1A]" /> Work Email *
                   </label>
                   <input
                     type="email"
@@ -94,7 +94,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                     placeholder="marcus@propertygroup.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -102,7 +102,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
               {/* Business / Building Name */}
               <div className="space-y-1">
                 <label className="text-[#514A44] font-medium flex items-center gap-1.5">
-                  <Building className="w-3.5 h-3.5 text-[#1C4E6B]" /> Business or Building Name *
+                  <Building className="w-3.5 h-3.5 text-[#211D1A]" /> Business or Building Name *
                 </label>
                 <input
                   type="text"
@@ -110,14 +110,14 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                   placeholder="e.g. Halifax Commerce Tower / Apex Plaza"
                   value={formData.businessBuilding}
                   onChange={(e) => setFormData({ ...formData, businessBuilding: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
                 />
               </div>
 
               {/* Location Address */}
               <div className="space-y-1">
                 <label className="text-[#514A44] font-medium flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-[#1C4E6B]" /> Location Address *
+                  <MapPin className="w-3.5 h-3.5 text-[#211D1A]" /> Location Address *
                 </label>
                 <input
                   type="text"
@@ -125,7 +125,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                   placeholder="e.g. 1801 Barrington St, Halifax, NS B3J 3L7"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors"
                 />
               </div>
 
@@ -135,7 +135,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                 <select
                   value={formData.footTraffic}
                   onChange={(e) => setFormData({ ...formData, footTraffic: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none transition-colors"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none transition-colors"
                 >
                   <option value="50-100 occupants/day">50 - 100 occupants / day</option>
                   <option value="100-250 occupants/day">100 - 250 occupants / day (Ideal)</option>
@@ -148,7 +148,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
               <div className="space-y-1">
                 <label className="text-[#514A44] font-medium flex items-center justify-between">
                   <span className="flex items-center gap-1.5">
-                    <MessageSquare className="w-3.5 h-3.5 text-[#1C4E6B]" /> Pre-filled Inquiry Message
+                    <MessageSquare className="w-3.5 h-3.5 text-[#211D1A]" /> Pre-filled Inquiry Message
                   </span>
                   <span className="text-[10px] text-[#8C8378] font-mono">Editable</span>
                 </label>
@@ -156,7 +156,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl p-3 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors leading-relaxed"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl p-3 text-[#211D1A] placeholder-[#B5AB9C] focus:outline-none transition-colors leading-relaxed"
                 />
               </div>
 
@@ -192,19 +192,19 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
             </div>
 
             <div className="space-y-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#1C4E6B]">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#211D1A]">
                 Verification Pending • Priority Hub
               </span>
               <h3 className="font-centaur text-3xl font-bold text-[#211D1A]">
                 Inquiry Received, {formData.name.split(' ')[0]}!
               </h3>
               <p className="font-sans-clean text-xs text-[#514A44] max-w-md mx-auto leading-relaxed">
-                We have logged your building inquiry for <strong className="text-[#1C4E6B]">{formData.businessBuilding}</strong> at <span className="underline">{formData.address}</span>.
+                We have logged your building inquiry for <strong className="text-[#211D1A]">{formData.businessBuilding}</strong> at <span className="underline">{formData.address}</span>.
               </p>
             </div>
 
             <div className="bg-[#FAF8F5] p-4 rounded-2xl border border-[#E3DDD3] max-w-md mx-auto text-left font-sans-clean text-xs space-y-2">
-              <p className="text-[11px] font-mono text-[#1C4E6B] uppercase">Assigned Placement Ref:</p>
+              <p className="text-[11px] font-mono text-[#211D1A] uppercase">Assigned Placement Ref:</p>
               <p className="font-mono text-[#211D1A] font-bold">#FI-LOC-{Math.floor(100000 + Math.random() * 900000)}</p>
               <p className="text-[#8C8378] text-[11px]">
                 A Fresco regional site coordinator will conduct an initial foot-traffic audit and reply to <span className="text-[#211D1A]">{formData.email}</span> within 24 business hours.

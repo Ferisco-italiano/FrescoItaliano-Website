@@ -45,7 +45,7 @@ export const LocationsSlider: React.FC<LocationsSliderProps> = ({ onOpenEligibil
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="text-left space-y-2">
-            <span className="text-xs font-sans-clean uppercase tracking-[0.25em] text-[#1C4E6B] flex items-center gap-2">
+            <span className="text-xs font-sans-clean uppercase tracking-[0.25em] text-[#211D1A] flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5" /> Now Serving
             </span>
             <h2 className="font-centaur text-3xl sm:text-4xl font-medium text-[#211D1A]">
@@ -65,13 +65,13 @@ export const LocationsSlider: React.FC<LocationsSliderProps> = ({ onOpenEligibil
           {LOCATIONS.map((loc) => (
             <div
               key={loc.id}
-              className="flex-shrink-0 w-[260px] sm:w-[300px] snap-start rounded-xl overflow-hidden border border-[#E3DDD3] bg-white"
+              className="flex-shrink-0 w-[16.25rem] sm:w-[18.75rem] snap-start rounded-xl overflow-hidden border border-[#E3DDD3] bg-white"
             >
               <div className="h-48 sm:h-56 overflow-hidden">
                 <img src={loc.image} alt={loc.name} className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-left space-y-0.5">
-                <span className="text-[10px] font-sans-clean uppercase tracking-wide text-[#1C4E6B] font-semibold">
+                <span className="text-[10px] font-sans-clean uppercase tracking-wide text-[#211D1A] font-semibold">
                   {loc.city}
                 </span>
                 <p className="font-centaur text-base text-[#211D1A]">{loc.name}</p>

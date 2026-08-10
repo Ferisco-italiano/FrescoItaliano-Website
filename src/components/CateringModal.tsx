@@ -33,7 +33,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#1C4E6B] border border-[#E3DDD3] transition-colors focus:outline-none"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none"
         >
           <X className="w-5 h-5" />
         </button>
@@ -42,7 +42,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
           <div className="space-y-8">
             {/* Header Banner */}
             <div className="space-y-3 border-b border-[#E3DDD3] pb-6 pr-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#1C4E6B]/40 text-[#1C4E6B] text-[11px] font-mono uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#211D1A]/40 text-[#211D1A] text-[11px] font-mono uppercase tracking-widest">
                 <Coffee className="w-3.5 h-3.5" /> Mobile Italian Barista Bar
               </div>
               <h2 className="font-centaur text-3xl sm:text-4xl font-bold text-[#211D1A]">
@@ -56,19 +56,19 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
             {/* Catering Highlights */}
             <div className="grid sm:grid-cols-3 gap-4 font-sans-clean text-xs">
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <span className="text-[10px] font-mono text-[#1C4E6B] uppercase">Turnkey Setup</span>
+                <span className="text-[10px] font-mono text-[#211D1A] uppercase">Turnkey Setup</span>
                 <p className="font-centaur text-lg font-bold text-[#211D1A]">Full Barista Station</p>
                 <p className="text-[#8C8378] text-[11px]">Includes commercial Italian machinery & professional baristas.</p>
               </div>
 
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <span className="text-[10px] font-mono text-[#1C4E6B] uppercase">SCA 80+ Specialty</span>
+                <span className="text-[10px] font-mono text-[#211D1A] uppercase">SCA 80+ Specialty</span>
                 <p className="font-centaur text-lg font-bold text-[#211D1A]">Java Blend Beans</p>
                 <p className="text-[#8C8378] text-[11px]">Specialty beans ground fresh per order with custom branded cups.</p>
               </div>
 
               <div className="bg-[#FAF8F5] p-4 rounded-xl border border-[#E3DDD3] space-y-1">
-                <span className="text-[10px] font-mono text-[#1C4E6B] uppercase">High Output</span>
+                <span className="text-[10px] font-mono text-[#211D1A] uppercase">High Output</span>
                 <p className="font-centaur text-lg font-bold text-[#211D1A]">200+ Drinks / Hour</p>
                 <p className="text-[#8C8378] text-[11px]">Rapid extraction to handle heavy guest volume without delays.</p>
               </div>
@@ -89,7 +89,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                     placeholder="e.g. David Miller"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
 
@@ -101,7 +101,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                     placeholder="david@eventgroup.ca"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
               </div>
@@ -115,7 +115,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                     placeholder="e.g. Tech Summit Gala"
                     value={formData.eventName}
                     onChange={(e) => setFormData({ ...formData, eventName: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
 
@@ -125,7 +125,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                     type="date"
                     value={formData.eventDate}
                     onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   />
                 </div>
 
@@ -134,7 +134,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                   <select
                     value={formData.guestCount}
                     onChange={(e) => setFormData({ ...formData, guestCount: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
+                    className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl px-3.5 py-2.5 text-[#211D1A] focus:outline-none"
                   >
                     <option value="25-50 guests">25 - 50 guests</option>
                     <option value="50-150 guests">50 - 150 guests</option>
@@ -150,7 +150,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
                   rows={2}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#1C4E6B] rounded-xl p-3 text-[#211D1A] focus:outline-none"
+                  className="w-full bg-[#FAF8F5] border border-[#E3DDD3] focus:border-[#211D1A] rounded-xl p-3 text-[#211D1A] focus:outline-none"
                 />
               </div>
 
@@ -170,14 +170,14 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
             </div>
 
             <div className="space-y-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#1C4E6B]">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#211D1A]">
                 Catering Quote Inquiry Received
               </span>
               <h3 className="font-centaur text-3xl font-bold text-[#211D1A]">
                 Inquiry Logged, {formData.name.split(' ')[0]}!
               </h3>
               <p className="font-sans-clean text-xs text-[#514A44] max-w-md mx-auto">
-                We have received your event catering inquiry for <strong className="text-[#1C4E6B]">{formData.eventName}</strong>. Our event director will review date availability and respond to <span className="underline">{formData.email}</span> within 24 hours.
+                We have received your event catering inquiry for <strong className="text-[#211D1A]">{formData.eventName}</strong>. Our event director will review date availability and respond to <span className="underline">{formData.email}</span> within 24 hours.
               </p>
             </div>
 

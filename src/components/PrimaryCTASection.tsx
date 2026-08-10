@@ -66,7 +66,7 @@ export const PrimaryCTASection: React.FC<PrimaryCTASectionProps> = ({ onOpenElig
             {/* Right: image block */}
             <div className="relative aspect-square rounded-[1.75rem] overflow-hidden bg-[#C9A961]">
               <img
-                src="../../public/images/CTAimage.png"
+                src="../../public/images/CTAimage.webp"
                 alt="Fresco Italiano machine in a partner location"
                 className="w-full h-full object-cover"
               />

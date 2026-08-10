@@ -25,7 +25,7 @@ export default function App() {
   const [cateringOpen, setCateringOpen] = useState(false);
 
   return (
-    <div className="min-h-screen font-centaur antialiased selection:bg-[#1C4E6B] selection:text-white flex flex-col justify-between bg-white text-[#211D1A]">
+    <div className="min-h-screen font-centaur antialiased selection:bg-[#211D1A] selection:text-white flex flex-col justify-between bg-white text-[#211D1A]">
       <AnnouncementBar onOpenEligibility={() => setEligibilityOpen(true)} />
 
       <main className="flex-1">

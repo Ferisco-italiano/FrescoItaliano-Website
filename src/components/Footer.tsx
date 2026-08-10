@@ -35,11 +35,11 @@ export const Footer: React.FC<FooterProps> = ({
             </p>
 
             <div className="pt-2 flex items-center gap-4 text-[#8C8378] font-sans-clean text-[11px]">
-              <span className="flex items-center gap-1 text-[#1C4E6B]">
+              <span className="flex items-center gap-1 text-[#211D1A]">
                 <ShieldCheck className="w-3.5 h-3.5" /> Made in Italy
               </span>
               <span>•</span>
-              <span className="flex items-center gap-1 text-[#1C4E6B]">
+              <span className="flex items-center gap-1 text-[#211D1A]">
                 <Award className="w-3.5 h-3.5" /> Java Blend Est. 1938
               </span>
             </div>
@@ -52,22 +52,22 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-[#514A44] font-medium">
               <li>
-                <button onClick={() => scrollToSection('locations')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('locations')} className="hover:text-[#211D1A] transition-colors">
                   Find A Fresco Near You
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('elevate-location')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('elevate-location')} className="hover:text-[#211D1A] transition-colors">
                   Property Managers
                 </button>
               </li>
               <li>
-                <button onClick={onOpenEligibility} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={onOpenEligibility} className="hover:text-[#211D1A] transition-colors">
                   Check Location Eligibility
                 </button>
               </li>
               <li>
-                <a href="mailto:careers@frescoitaliano.com" className="hover:text-[#1C4E6B] transition-colors">
+                <a href="mailto:careers@frescoitaliano.com" className="hover:text-[#211D1A] transition-colors">
                   Careers
                 </a>
               </li>
@@ -81,22 +81,22 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-[#514A44] font-medium">
               <li>
-                <button onClick={() => scrollToSection('italian-barista')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('italian-barista')} className="hover:text-[#211D1A] transition-colors">
                   The Bianchi Machine
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('craftsman-origin')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('craftsman-origin')} className="hover:text-[#211D1A] transition-colors">
                   Java Blend &amp; Sustainability
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('coffee-culture')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('coffee-culture')} className="hover:text-[#211D1A] transition-colors">
                   Beverage Menu
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('hero')} className="hover:text-[#1C4E6B] transition-colors">
+                <button onClick={() => scrollToSection('hero')} className="hover:text-[#211D1A] transition-colors">
                   Brand Story
                 </button>
               </li>
@@ -110,14 +110,14 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-[#514A44] font-medium">
               <li>
-                <a href="mailto:inquiries@frescoitaliano.com" className="hover:text-[#1C4E6B] transition-colors">
+                <a href="mailto:inquiries@frescoitaliano.com" className="hover:text-[#211D1A] transition-colors">
                   Customer Inquiry
                 </a>
               </li>
               <li>
                 <button
                   onClick={onOpenOfficePerks}
-                  className="text-[#1C4E6B] hover:text-[#163e57] font-semibold flex items-center gap-1 group text-left"
+                  className="text-[#211D1A] hover:text-[#211D1A] font-semibold flex items-center gap-1 group text-left"
                 >
                   <span>Office / Corporate Inquiry</span>
                   <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -126,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={onOpenCatering}
-                  className="text-[#1C4E6B] hover:text-[#163e57] font-semibold flex items-center gap-1 group text-left"
+                  className="text-[#211D1A] hover:text-[#211D1A] font-semibold flex items-center gap-1 group text-left"
                 >
                   <span>Event Catering Inquiry</span>
                   <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -136,15 +136,15 @@ export const Footer: React.FC<FooterProps> = ({
 
             <div className="pt-2 space-y-2 text-[#514A44] font-sans-clean">
               <p className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#1C4E6B]" />
+                <MapPin className="w-3.5 h-3.5 text-[#211D1A]" />
                 <span>Halifax • Toronto • Montreal</span>
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#1C4E6B]" />
+                <Mail className="w-3.5 h-3.5 text-[#211D1A]" />
                 <span>inquiries@frescoitaliano.com</span>
               </p>
               <p className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#1C4E6B]" />
+                <Phone className="w-3.5 h-3.5 text-[#211D1A]" />
                 <span>+1 (800) 555-FRESCO</span>
               </p>
             </div>

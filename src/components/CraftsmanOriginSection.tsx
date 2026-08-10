@@ -15,7 +15,7 @@ export const CraftsmanOriginSection: React.FC<CraftsmanOriginSectionProps> = ({ 
           <div className="lg:col-span-6 order-1">
             <div className="overflow-hidden bg-[#211D1A]">
               <img
-                src="../images/Craftsman&TheOrigin.png"
+                src="../images/Craftsman&TheOrigin.webp"
                 alt="Java Blend coffee beans, portafilter, and freshly pulled espresso"
                 className="w-full h-full object-cover aspect-square"
               />
