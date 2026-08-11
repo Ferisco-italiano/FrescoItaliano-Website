@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="pt-2 space-y-2 text-[#514A44] font-sans-clean">
               <p className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#211D1A]" />
-                <span>Halifax • Toronto • Montreal</span>
+                <span>Halifax</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#211D1A]" />

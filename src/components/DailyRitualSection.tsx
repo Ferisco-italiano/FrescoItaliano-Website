@@ -15,6 +15,9 @@ export const DailyRitualSection: React.FC<DailyRitualSectionProps> = ({ onOpenEl
         className="absolute inset-0 w-full h-full object-cover object-left"
       />
 
+      {/* Extra flat overlay on mobile so the description stays readable over the photo */}
+      <div className="absolute inset-0 bg-black/70 sm:hidden" />
+
       {/* Fade to black on the right where the text sits */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black" />
       <div className="absolute inset-0 bg-gradient-to-r from-transparent from-40% via-black/60 via-65% to-black to-85%" />

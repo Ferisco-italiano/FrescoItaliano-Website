@@ -20,11 +20,14 @@ export const ItalianBaristaSection: React.FC<ItalianBaristaSectionProps> = ({ on
     <section id="italian-barista" className="relative py-36 sm:py-48 min-h-[40rem] flex items-center bg-black text-white overflow-hidden">
       {/* Full-bleed background photo */}
       <div className="absolute inset-0">
-        <img
-          src="/images/CoffeeEvolutionBG.webp"
-          alt="Barista pouring milk into a Bianchi espresso cup beside a modern Bianchi coffee machine"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source media="(max-width: 1023px)" srcSet="/images/CoffeeEvolutionBGTablet.webp" />
+          <img
+            src="/images/CoffeeEvolutionBG.webp"
+            alt="Barista pouring milk into a Bianchi espresso cup beside a modern Bianchi coffee machine"
+            className="w-full h-full object-cover"
+          />
+        </picture>
         {/* Light overall tint plus a soft center-focused vignette behind the centered text, so the barista (left) and machine (right) both stay visible */}
         <div className="absolute inset-0 bg-black/25" />
         <div

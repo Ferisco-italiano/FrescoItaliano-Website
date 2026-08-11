@@ -37,6 +37,9 @@ export const BrewGuideSection: React.FC = () => {
         ))}
       </div>
 
+      {/* Extra flat overlay on mobile so the description stays readable over the photo */}
+      <div className="absolute inset-0 bg-black/50 sm:hidden" />
+
       {/* Vignette so the title and description stay legible over any slide */}
       <div
         className="absolute inset-0"

@@ -26,11 +26,11 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ onOpenEligibil
         onClick={onOpenEligibility}
         className="w-full max-w-7xl mx-auto flex items-center justify-center gap-3 px-4 py-2.5 text-center cursor-pointer group"
       >
-        <span className="relative h-4 overflow-hidden flex-1 max-w-2xl">
+        <span className="relative h-11 sm:h-4 overflow-hidden flex-1 max-w-2xl">
           {MESSAGES.map((msg, i) => (
             <span
               key={msg}
-              className={`absolute inset-0 flex items-center justify-center font-sans-clean text-[11px] sm:text-xs tracking-wide transition-all duration-500 ${
+              className={`absolute inset-0 flex items-center justify-center font-sans-clean text-[11px] sm:text-xs leading-relaxed sm:leading-normal tracking-wide transition-all duration-500 ${
                 i === index ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
               }`}
             >

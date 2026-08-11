@@ -46,7 +46,7 @@ export const PrimaryCTASection: React.FC<PrimaryCTASectionProps> = ({ onOpenElig
               </h2>
 
               <p className="font-sans-clean text-base sm:text-lg text-white/70 max-w-md leading-relaxed">
-                Own a high foot-traffic location? We actively run local ads to bring our community to you. See if your space is eligible for a Fresco machine placement.
+                Own a high foot-traffic location?  Earn extra revenue while increasing the value of your building.
               </p>
 
               {/* Trust pill row, styled like the social icon row in the reference */}

@@ -3,12 +3,12 @@ import { Coffee, Zap, Leaf, ShieldCheck } from 'lucide-react';
 
 const LEFT_FEATURES = [
   { icon: Coffee, label: 'Fresh Ground\nEvery Cup' },
-  { icon: Zap, label: 'Bianchi ISO\nEngineering' },
+  { icon: Zap, label: 'Bianchi\nEngineering' },
 ];
 
 const RIGHT_FEATURES = [
   { icon: Leaf, label: 'Java Blend\nSCA 80+ Beans' },
-  { icon: ShieldCheck, label: 'Zero Cap-Ex\nInstallation' },
+  { icon: ShieldCheck, label: 'Easy\nInstallation' },
 ];
 
 export const CoffeeGuideSection: React.FC = () => {
@@ -23,6 +23,9 @@ export const CoffeeGuideSection: React.FC = () => {
         }}
       />
 
+      {/* Extra flat overlay on mobile so the description stays readable over the photo */}
+      <div className="absolute inset-0 bg-black/50 md:hidden" />
+
       {/* Top + bottom vignette so title and features stay legible over the photo */}
       <div
         className="absolute inset-0"
@@ -35,8 +38,8 @@ export const CoffeeGuideSection: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 w-full min-h-[48.75rem] flex flex-col justify-between px-6 sm:px-12 py-10 sm:py-12">
         {/* Title top-left, description top-right — same row alignment */}
-        <div className="flex items-start justify-between w-full gap-8 flex-wrap">
-          <div className="max-w-md">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between w-full gap-6 md:gap-8">
+          <div className="max-w-full md:max-w-xs lg:max-w-md">
             <h1 className="font-centaur leading-[0.98] font-normal m-0">
               <span
                 className="block text-[#F7F3EA]"
@@ -55,7 +58,7 @@ export const CoffeeGuideSection: React.FC = () => {
             <div className="w-14 h-0.5 bg-[#C9A961] mt-5" />
           </div>
 
-          <div className="max-w-md pt-2 sm:pt-4">
+          <div className="max-w-full md:max-w-xs lg:max-w-md pt-2 md:pt-4">
             <p
               className="font-sans text-base sm:text-lg leading-relaxed text-[#CFC8B8] mb-3 font-light"
               style={{ textShadow: '0 1px 12px rgba(0,0,0,0.6)' }}
@@ -64,13 +67,7 @@ export const CoffeeGuideSection: React.FC = () => {
               break room, and push through the afternoon slump. It sharpens focus and turns a hallway into a place
               where ideas happen.
             </p>
-            <p
-              className="font-sans text-base sm:text-lg leading-relaxed text-[#CFC8B8] font-light"
-              style={{ textShadow: '0 1px 12px rgba(0,0,0,0.6)' }}
-            >
-              Fresco Italiano brings that same specialty-café quality directly into your building — freshly ground,
-              expertly extracted, at zero cost to you.
-            </p>
+            
           </div>
         </div>
 
