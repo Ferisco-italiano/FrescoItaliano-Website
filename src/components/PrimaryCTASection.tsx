@@ -5,7 +5,6 @@ import {
   Building,
   MapPin,
   ChevronRight,
-  Globe,
   ArrowUpRight,
 } from 'lucide-react';
 
@@ -17,6 +16,19 @@ const TRUST_PILLS = [
   { icon: ShieldCheck, label: 'Zero CapEx' },
   { icon: Building, label: 'Turnkey Install' },
   { icon: MapPin, label: 'Local Ad Drive' },
+];
+
+const STATS = [
+  {
+    stat: '75%',
+    title: 'Prefer Espresso',
+    body: 'Coffee drinkers prefer Gourmet Espresso Drinks.',
+  },
+  {
+    stat: '100%',
+    title: 'Zero Waste',
+    body: 'A fully compostable bean-to-cup process.',
+  },
 ];
 
 export const PrimaryCTASection: React.FC<PrimaryCTASectionProps> = ({ onOpenEligibility }) => {
@@ -72,19 +84,6 @@ export const PrimaryCTASection: React.FC<PrimaryCTASectionProps> = ({ onOpenElig
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-black/10" />
 
-              {/* Signature-style mark, top-left */}
-              <span
-                className="absolute top-5 left-5 text-white/90 text-2xl"
-                style={{ fontFamily: "'Brush Script MT', cursive" }}
-              >
-                Fresco Italiano
-              </span>
-
-              {/* Globe icon, top-right */}
-              <span className="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-center">
-                <Globe className="w-4 h-4 text-[#211D1A]" />
-              </span>
-
               {/* Thumbnail stack, bottom-left */}
               <div className="absolute bottom-6 left-5 flex flex-col gap-2">
                 <span className="w-11 h-11 rounded-full border-2 border-white overflow-hidden">
@@ -118,18 +117,19 @@ export const PrimaryCTASection: React.FC<PrimaryCTASectionProps> = ({ onOpenElig
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-6 items-center px-6 sm:px-10 pb-8 sm:pb-10 pt-6 border-t border-white/10">
             {/* Stats row */}
             <div className="flex items-start gap-10 sm:gap-14">
-              <div>
-                <p className="font-sans-clean font-black text-4xl sm:text-5xl text-white">+250</p>
-                <p className="font-sans-clean text-xs sm:text-sm text-white/60 leading-snug mt-1 max-w-[140px]">
-                  Locations already earning passive income
-                </p>
-              </div>
-              <div>
-                <p className="font-sans-clean font-black text-4xl sm:text-5xl text-white">+800k</p>
-                <p className="font-sans-clean text-xs sm:text-sm text-white/60 leading-snug mt-1 max-w-[160px]">
-                  Cups poured through partner locations monthly
-                </p>
-              </div>
+              {STATS.map((item) => (
+                <div key={item.title} className="max-w-[300px]">
+                  <p className="font-sans-clean font-black text-5xl sm:text-6xl leading-none" style={{ color: '#C9A961' }}>
+                    {item.stat}
+                  </p>
+                  <p className="font-sans-clean font-semibold text-sm sm:text-base text-white mt-2">
+                    {item.title}
+                  </p>
+                  <p className="font-sans-clean text-xs sm:text-sm text-white/60 leading-snug mt-1">
+                    {item.body}
+                  </p>
+                </div>
+              ))}
             </div>
 
             {/* CTA button — same column width as the image block above */}
