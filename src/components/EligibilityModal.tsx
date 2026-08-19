@@ -19,16 +19,43 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: 'ce432ae5-c737-45d9-8749-5b1874da10d9',
+          subject: `New Location Eligibility Inquiry — ${formData.businessBuilding}`,
+          from_name: formData.name,
+          name: formData.name,
+          email: formData.email,
+          business_building: formData.businessBuilding,
+          address: formData.address,
+          foot_traffic: formData.footTraffic,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setSubmitError('Something went wrong sending your inquiry. Please try again.');
+      }
+    } catch {
+      setSubmitError('Something went wrong sending your inquiry. Please try again.');
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-    }, 1200);
+    }
   };
 
   const handleReset = () => {
@@ -39,16 +66,19 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#211D1A]/50 backdrop-blur-md animate-in fade-in duration-300">
       {/* Modal Card */}
-      <div className="bg-white border border-[#E3DDD3] rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-xl relative overflow-hidden text-left max-h-[90vh] overflow-y-auto">
-        
+      <div className="bg-white border border-[#E3DDD3] rounded-3xl max-w-2xl w-full shadow-xl relative overflow-hidden text-left max-h-[90vh] flex flex-col">
+
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none z-10"
           aria-label="Close Modal"
         >
           <X className="w-5 h-5" />
         </button>
+
+        {/* Scrollable content */}
+        <div className="overflow-y-auto p-6 sm:p-8">
 
         {!submitted ? (
           <div className="space-y-6">
@@ -176,6 +206,9 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
                     </>
                   )}
                 </button>
+                {submitError && (
+                  <p className="text-[11px] text-red-600 text-center pt-2">{submitError}</p>
+                )}
               </div>
 
               <div className="flex items-center justify-center gap-2 text-[10px] font-mono text-[#8C8378] pt-1">
@@ -220,6 +253,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({ isOpen, onCl
           </div>
         )}
 
+        </div>
       </div>
     </div>
   );

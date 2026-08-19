@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, MapPin, Mail, Phone, Award, ShieldCheck } from 'lucide-react';
+import { ChevronRight, MapPin, Mail, Award, ShieldCheck } from 'lucide-react';
 
 interface FooterProps {
   onOpenEligibility: () => void;
@@ -66,11 +66,6 @@ export const Footer: React.FC<FooterProps> = ({
                   Check Location Eligibility
                 </button>
               </li>
-              <li>
-                <a href="mailto:careers@frescoitaliano.com" className="hover:text-[#211D1A] transition-colors">
-                  Careers
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -110,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-[#514A44] font-medium">
               <li>
-                <a href="mailto:inquiries@frescoitaliano.com" className="hover:text-[#211D1A] transition-colors">
+                <a href="mailto:frescoitalianoltd@gmail.com" className="hover:text-[#211D1A] transition-colors">
                   Customer Inquiry
                 </a>
               </li>
@@ -137,15 +132,11 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="pt-2 space-y-2 text-[#514A44] font-sans-clean">
               <p className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#211D1A]" />
-                <span>Halifax</span>
+                <span>Nova Scotia</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#211D1A]" />
-                <span>inquiries@frescoitaliano.com</span>
-              </p>
-              <p className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#211D1A]" />
-                <span>+1 (800) 555-FRESCO</span>
+                <span>frescoitalianoltd@gmail.com</span>
               </p>
             </div>
           </div>

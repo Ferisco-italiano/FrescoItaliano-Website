@@ -17,26 +17,61 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
     message: 'Hello Fresco Team, we are organizing an event and would like to hire an on-site Fresco Italian mobile barista pop-up bar. Please provide catering availability and quotes.',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: 'ce432ae5-c737-45d9-8749-5b1874da10d9',
+          subject: `New Event Catering Inquiry — ${formData.eventName}`,
+          from_name: formData.name,
+          name: formData.name,
+          email: formData.email,
+          event_name: formData.eventName,
+          event_date: formData.eventDate,
+          guest_count: formData.guestCount,
+          location: formData.location,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setSubmitError('Something went wrong sending your inquiry. Please try again.');
+      }
+    } catch {
+      setSubmitError('Something went wrong sending your inquiry. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#211D1A]/50 backdrop-blur-md animate-in fade-in duration-300">
-      <div className="bg-white border border-[#E3DDD3] rounded-3xl max-w-3xl w-full p-6 sm:p-10 shadow-xl relative overflow-hidden text-left max-h-[90vh] overflow-y-auto">
-        
+      <div className="bg-white border border-[#E3DDD3] rounded-3xl max-w-3xl w-full shadow-xl relative overflow-hidden text-left max-h-[90vh] flex flex-col">
+
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FAF8F5] text-[#8C8378] hover:text-[#211D1A] border border-[#E3DDD3] transition-colors focus:outline-none z-10"
         >
           <X className="w-5 h-5" />
         </button>
+
+        <div className="overflow-y-auto p-6 sm:p-10">
 
         {!submitted ? (
           <div className="space-y-8">
@@ -156,11 +191,21 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
 
               <button
                 type="submit"
-                className="gold-button w-full py-4 rounded-xl text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+                disabled={isSubmitting}
+                className="gold-button w-full py-4 rounded-xl text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg disabled:opacity-50"
               >
-                <Send className="w-4 h-4" />
-                <span>Submit Event Catering Request</span>
+                {isSubmitting ? (
+                  <span>Sending Request...</span>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>Submit Event Catering Request</span>
+                  </>
+                )}
               </button>
+              {submitError && (
+                <p className="text-[11px] text-red-600 text-center">{submitError}</p>
+              )}
             </form>
           </div>
         ) : (
@@ -193,6 +238,7 @@ export const CateringModal: React.FC<CateringModalProps> = ({ isOpen, onClose })
           </div>
         )}
 
+        </div>
       </div>
     </div>
   );

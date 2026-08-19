@@ -88,6 +88,10 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ onOpenEligibility })
             className={`w-full h-full object-cover ${slide.focus || 'object-center'}`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1A1512] via-[#1A1512]/25 to-[#1A1512]/10" />
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0) 60%)' }}
+          />
 
           <div className="absolute inset-0 flex items-end sm:items-center">
             <div className="max-w-7xl mx-auto px-6 sm:px-10 pb-14 sm:pb-0 w-full">
