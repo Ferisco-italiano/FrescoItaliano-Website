@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Slide {
@@ -58,12 +59,20 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ onOpenEligibility })
       {/* Logo + Check Eligibility, overlaid on the hero in place of a navbar */}
       <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-6 sm:px-10 py-5 sm:py-6">
         <img src="/images/logo.svg" alt="Fresco Italiano" className="h-15 w-auto sm:h-15" />
-        <button
-          onClick={onOpenEligibility}
-          className="btn-outline-gold px-5 py-2.5 sm:px-6 sm:py-3 rounded-sm text-[0.6875rem] sm:text-xs font-sans-clean uppercase tracking-[0.15em] font-semibold cursor-pointer"
-        >
-          Check Eligibility
-        </button>
+        <div className="flex items-center gap-5 sm:gap-8">
+          <Link
+            to="/private-office-spaces"
+            className="text-[0.6875rem] sm:text-xs font-sans-clean uppercase tracking-[0.15em] font-semibold text-white hover:text-[#D4AF6A] transition-colors"
+          >
+            Office Spaces
+          </Link>
+          <button
+            onClick={onOpenEligibility}
+            className="btn-outline-gold px-5 py-2.5 sm:px-6 sm:py-3 rounded-sm text-[0.6875rem] sm:text-xs font-sans-clean uppercase tracking-[0.15em] font-semibold cursor-pointer"
+          >
+            Check Eligibility
+          </button>
+        </div>
       </div>
 
       {SLIDES.map((slide, i) => (
